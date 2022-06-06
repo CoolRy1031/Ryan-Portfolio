@@ -40,6 +40,8 @@ nav{
 h2{
   text-align: center;
   grid-area: h2;
+  font-family: monospace;
+  color: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 nav > div {
   font-size: 20px;
@@ -54,6 +56,14 @@ aside {
   grid-area: aside;
   text-align: center;
   padding-top: 250px;
+  font-family: cursive;
+}
+#paragraph {
+  grid-area: aside;
+  padding-top: 280px;
+  text-align: center;
+  font-family: cursive;
+
 }
 
 main {
