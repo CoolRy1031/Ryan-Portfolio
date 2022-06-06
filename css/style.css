@@ -1,27 +1,78 @@
+html {
+  box-sizing: border-box;
+}
 
-
-
-
-
-
-nav {
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+body {
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 24px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+  'nav nav nav'
+  'aside main main'
+  'footer footer footer';
+}
+nav{
   display: flex;
   height: 60px;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 10px;
-  color: blue;
-  align-items: center;
+  background-color: #a8eb12;
   flex-direction: row;
-  justify-self: center;
-  background-color: skyblue;
+  align-items: center;
+  justify-content: center;
+  grid-area: nav;
+  font-family: fantasy;
 }
 
 nav > div {
   font-size: 20px;
   font-weight: bold;
   margin: 0 5px;
+
 }
 nav > *:nth-last-child(3){
   margin-left: auto;
 }
+
+.flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 10px;
+  color:#051937; 
+}
+
+aside {
+  background-color: #38b18a;
+  grid-area: aside;
+}
+
+main {
+  background-color: #92d97c;
+  grid-column: 2/4;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+footer {
+  background-color: #f9f871;
+  height: 40px;
+  grid-area: footer;
+}
+
+
