@@ -1,0 +1,27 @@
+
+
+
+
+
+
+nav {
+  display: flex;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 10px;
+  color: blue;
+  align-items: center;
+  flex-direction: row;
+  justify-self: center;
+  background-color: skyblue;
+}
+
+nav > div {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 5px;
+}
+nav > *:nth-last-child(3){
+  margin-left: auto;
+}
