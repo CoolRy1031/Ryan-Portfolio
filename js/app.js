@@ -14,4 +14,3 @@ paragraph.addEventListener('click', function(){
 })
 
 
-
