@@ -16,7 +16,7 @@ body {
   background-size: auto;
   font-family: sans-serif;
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   display: grid;
   grid-template-columns: 40% 30% 30% ;
   grid-template-rows:  auto auto 1fr;
@@ -24,7 +24,7 @@ body {
   'nav nav nav'
   'h2 h2 h2'
   'aside main main'
-  'footer footer footer';;
+  'footer footer footer';
 }
 nav{
   display: flex;
@@ -102,5 +102,29 @@ flex-container{
 
 }  
 
-
-
+@media only screen and (min-width: 768px){
+  body{ 
+    font-size: 22px;
+    display: grid;
+    grid-template-columns: 40% 30% 30% ;
+    grid-template-rows:  auto auto 1fr;
+    grid-template-areas: 
+    'nav nav nav'
+    'h2 h2 h2'
+    'aside main main'
+    'footer footer footer';
+  }
+}
+@media only screen and (min-width: 1024px){
+  body{ 
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 40% 30% 30% ;
+    grid-template-rows:  auto auto 1fr;
+    grid-template-areas: 
+    'nav nav nav'
+    'h2 h2 h2'
+    'aside main main'
+    'footer footer footer';
+  }
+}
