@@ -29,7 +29,7 @@ body {
 nav{
   display: flex;
   height: 60px;
-  background-color: #a8eb12;
+  background-image: linear-gradient(to right top, #3ed624, #4fd540, #5dd454, #6ad366, #77d276, #80d282, #8ad28d, #93d198, #9cd2a3, #a6d2ad, #b0d3b7, #bad3c0);
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -41,7 +41,10 @@ h2{
   text-align: center;
   grid-area: h2;
   font-family: monospace;
-  color: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 nav > div {
   font-size: 20px;
@@ -56,13 +59,18 @@ aside {
   grid-area: aside;
   text-align: center;
   padding-top: 250px;
-  font-family: cursive;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: darkkhaki;
 }
 #paragraph {
   grid-area: aside;
   padding-top: 280px;
   text-align: center;
   font-family: cursive;
+  background-image: linear-gradient(to right top, #181517, #301b2f, #44224e, #512c73, #513a9d, #454baf, #325ac0, #006ad0, #0073bd, #0076a0, #007481, #3c6f6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 
 }
 
@@ -70,8 +78,7 @@ main {
   margin-left: auto;
   grid-area: main;
   padding-bottom: 50px;
-
-
+  
 }
 
 footer {
@@ -81,6 +88,12 @@ footer {
   margin-left: auto;
   font-family: fantasy;
   grid-area: footer;
+  background-image: linear-gradient(to right top, #0d090c, #161416, #1d1b1d, #242325, #2b2b2d, #323335, #393b3d, #404345, #494d4e, #525758, #5c6161, #666b6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+
 
 }
 flex-container{
