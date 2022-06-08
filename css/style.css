@@ -41,7 +41,7 @@ h2{
   text-align: center;
   grid-area: h2;
   font-family: monospace;
-  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-image: linear-gradient(to right top, #100566, #930064, #dd2347, #fb8419, #ebdb12);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
@@ -55,6 +55,7 @@ nav > div {
 nav > *:nth-last-child(3){
   margin-left: auto;
 }
+
 aside {
   grid-area: aside;
   text-align: center;
@@ -62,6 +63,7 @@ aside {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: darkkhaki;
 }
+
 #paragraph {
   grid-area: aside;
   padding-top: 280px;
@@ -70,15 +72,22 @@ aside {
   background-image: linear-gradient(to right top, #181517, #301b2f, #44224e, #512c73, #513a9d, #454baf, #325ac0, #006ad0, #0073bd, #0076a0, #007481, #3c6f6b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
 
-
+#paragraph.dark {
+  --paragraph-pg:#01020b;
+  --font-family: Arial;
+  --font-size: 28px;
+  background-color: var(--paragraph-pg);
+  background-image: var(--paragraph-pg);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
 }
 
 main {
   margin-left: auto;
   grid-area: main;
-  padding-bottom: 50px;
-  
+  padding-bottom: 50px;  
 }
 
 footer {
@@ -91,16 +100,21 @@ footer {
   background-image: linear-gradient(to right top, #0d090c, #161416, #1d1b1d, #242325, #2b2b2d, #323335, #393b3d, #404345, #494d4e, #525758, #5c6161, #666b6a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-
-
-
 }
+
 flex-container{
   display: flex;
   flex-direction: column;
+} 
 
-}  
+.btn{
+  font-size: 16px;
+  font-family: cursive;
+  color: black;
+  background-color: greenyellow;
+
+}
+
 
 @media only screen and (min-width: 768px){
   body{ 

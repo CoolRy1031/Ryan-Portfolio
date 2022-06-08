@@ -1,16 +1,28 @@
-const git = document.querySelector('#git')
-const linked = document.querySelector('#linked')
-const mail = document.querySelector('#mail')
-const work = document.querySelector('#work')
-const contact = document.querySelector('#contact')
-const resume = document.querySelector('#resume')
+const resume = document.getElementById('resume')
 const paragraph = document.querySelector('#paragraph')
+const lightDarkBtn = document.querySelector('#light-dark-button')
+console.log(lightDarkBtn)
+
 
 const allido = new Audio('../audio/allido.mp3')
 
-paragraph.addEventListener('click', function(){
+resume.addEventListener('click', function(){
   allido.volume = .1
   allido.play()
 })
+lightDarkBtn.addEventListener('click', toggleLightDark)
+
+function toggleLightDark() {
+  paragraph.className = paragraph.className === 'dark' ? '' : 'dark'
+}
+function checkDarkPref() {
+  if (
+    window.matchMedia("(prefers-color-scheme:dark)").matches &&
+    body.className !== "dark"
+  ) {
+    toggleLightDark()
+  }
+}
+checkDarkPref()
 
 
