@@ -1,14 +1,14 @@
-const resume = document.getElementById('resume')
+const footer = document.getElementById('footer')
 const paragraph = document.querySelector('#paragraph')
 const lightDarkBtn = document.querySelector('#light-dark-button')
 const title = document.querySelector('#portfolio')
 
 
 
-const allido = new Audio('../audio/allido.mp3')
+const allido = new Audio('../audio/Dj clipped.mov')
 
 
-resume.addEventListener('click', function(){
+footer.addEventListener('click', function(){
   allido.volume = .1
   allido.play()
 })
