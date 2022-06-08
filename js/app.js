@@ -1,10 +1,12 @@
 const resume = document.getElementById('resume')
 const paragraph = document.querySelector('#paragraph')
 const lightDarkBtn = document.querySelector('#light-dark-button')
-console.log(lightDarkBtn)
+const title = document.querySelector('#portfolio')
+
 
 
 const allido = new Audio('../audio/allido.mp3')
+
 
 resume.addEventListener('click', function(){
   allido.volume = .1
@@ -25,4 +27,17 @@ function checkDarkPref() {
 }
 checkDarkPref()
 
-
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml16 .letter',
+    translateY: [-100,0],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: (el, i) => 30 * i
+  }).add({
+    targets: '.ml16',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });

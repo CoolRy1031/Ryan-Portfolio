@@ -37,7 +37,7 @@ nav{
   font-family: fantasy;
   
 }
-h2{
+h1{
   text-align: center;
   grid-area: h2;
   font-family: monospace;
@@ -46,6 +46,20 @@ h2{
   -webkit-text-fill-color: transparent;
   
 }
+.ml16 {
+  padding: 30px 30px;
+  font-weight: 500;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.7em;
+  overflow: hidden;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 nav > div {
   font-size: 20px;
   font-weight: bold;
