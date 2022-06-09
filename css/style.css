@@ -15,7 +15,7 @@ body {
   background-position: center;
   background-size: auto;
   font-family: sans-serif;
-  padding-top: 50px;
+  padding-bottom:  80px;
   margin: 0;
   font-size: 20px;
   display: grid;
@@ -135,7 +135,6 @@ flex-container{
     background-position: center;
     background-size: auto;
     font-size: 22px;
-    font-family: fantasy;
     display: grid;
     grid-template-columns: 40% 30% 30% ;
     grid-template-rows:  auto auto 1fr;
@@ -156,7 +155,6 @@ flex-container{
     background-position: center;
     background-size: auto;
     font-size: 22px;
-    font-family: fantasy;
     display: grid;
     grid-template-columns: 40% 30% 30% ;
     grid-template-rows:  auto auto 1fr;
