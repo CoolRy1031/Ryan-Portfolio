@@ -29,6 +29,7 @@ body {
 nav{
   display: flex;
   height: 60px;
+  padding-left: 5%;
   background-image: linear-gradient(to right top, #3ed624, #4fd540, #5dd454, #6ad366, #77d276, #80d282, #8ad28d, #93d198, #9cd2a3, #a6d2ad, #b0d3b7, #bad3c0);
   flex-direction: row;
   align-items: center;
@@ -80,7 +81,7 @@ aside {
 
 #paragraph {
   grid-area: aside;
-  padding-top: 280px;
+  padding-top: 300px;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-image: linear-gradient(to right top, #100566, #930064, #dd2347, #fb8419, #ebdb12);
