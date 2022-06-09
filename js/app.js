@@ -1,17 +1,34 @@
 const footer = document.getElementById('footer')
-const paragraph = document.querySelector('#paragraph')
-const lightDarkBtn = document.querySelector('#light-dark-button')
-const title = document.querySelector('#portfolio')
+const paragraph = document.getElementById('paragraph')
+const lightDarkBtn = document.getElementById('light-dark-button')
+const title = document.getElementById('portfolio')
+const favicon = document.getElementById('favicon')
+
 
 
 
 const allido = new Audio('../audio/Dj clipped.mov')
 
 
+
 footer.addEventListener('click', function(){
   allido.volume = .1
   allido.play()
+  changeFavicon()
 })
+
+function changeFavicon () {
+  favicon.setAttribute('href', '/images/Braves-Logo.png') 
+}
+  
+
+function revertFavicon () {
+  favicon.setAttribute('href', '/images/Ryan.jpeg')
+}
+
+
+
+
 lightDarkBtn.addEventListener('click', toggleLightDark)
 
 function toggleLightDark() {
@@ -23,6 +40,7 @@ function checkDarkPref() {
     body.className !== "dark"
   ) {
     toggleLightDark()
+  
   }
 }
 checkDarkPref()
@@ -41,3 +59,5 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+
