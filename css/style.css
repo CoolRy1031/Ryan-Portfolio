@@ -91,7 +91,7 @@ aside {
 #paragraph.dark {
   --paragraph-pg:#01020b;
   --font-family: Arial;
-  --font-size: 24px;
+  --font-size: 20px;
   background-color: var(--paragraph-pg);
   background-image: var(--paragraph-pg);
   font-family: var(--font-family);
