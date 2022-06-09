@@ -29,7 +29,7 @@ body {
 nav{
   display: flex;
   height: 60px;
-  padding-left: 50px;
+  padding-left: 80px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
