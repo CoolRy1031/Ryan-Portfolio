@@ -73,7 +73,7 @@ nav > *:nth-last-child(2){
 aside {
   grid-area: aside;
   text-align: center;
-  padding-top: 250px;
+  padding-top: 240px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: black;
 }
@@ -83,7 +83,7 @@ aside {
   padding-top: 280px;
   text-align: center;
   font-family: fantasy;
-  background-image: linear-gradient(to right top, #181517, #301b2f, #44224e, #512c73, #513a9d, #454baf, #325ac0, #006ad0, #0073bd, #0076a0, #007481, #3c6f6b);
+  background-image: linear-gradient(to right top, #100566, #930064, #dd2347, #fb8419, #ebdb12);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -91,7 +91,7 @@ aside {
 #paragraph.dark {
   --paragraph-pg:#01020b;
   --font-family: Arial;
-  --font-size: 28px;
+  --font-size: 24px;
   background-color: var(--paragraph-pg);
   background-image: var(--paragraph-pg);
   font-family: var(--font-family);
@@ -123,7 +123,7 @@ flex-container{
 
 .btn{
   font-size: 14px;
-  font-family: cursive;
+  font-family: fantasy;
   color: purple;
   background-image: linear-gradient(to right top, #3ed624, #4fd540, #5dd454, #6ad366, #77d276, #80d282, #8ad28d, #93d198, #9cd2a3, #a6d2ad, #b0d3b7, #bad3c0);
 }
