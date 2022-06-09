@@ -5,28 +5,27 @@ const footer = document.getElementById('footer')
 const paragraph = document.getElementById('paragraph')
 const lightDarkBtn = document.getElementById('light-dark-button')
 const favicon = document.getElementById('favicon')
-const cardContainer = document.getElementById('card-container')
+const cardContainer = document.getElementById('dropdown')
+console.log(cardContainer)
 
 
 
 let projectMarkup = projectData.map(project =>
-  ` 
-  <div class="card" style="width: 18rem;">
-    <img src="${project.image}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">${project.title}</h5>
-      <p class="card-text">${project.description}</p>
-      <div>
-      <a href="#"${project.github}"btn btn-primary">GitHub</a>
-      <a href="#"${project.deployment}"btn btn-primary">Deployment</a>
-      </div>
-    </div>
-  </div>
+  ` <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="${project.deployment}" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown link
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
   `
-  
   ).join('')
   
-  cardContainer.innerHTML =projectMarkup
+  cardContainer.innerHTML = projectMarkup
 
 
 const allido = new Audio('../audio/Dj clipped.mov')

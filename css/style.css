@@ -126,7 +126,10 @@ flex-container{
   font-family: cursive;
   color: purple;
   background-image: linear-gradient(to right top, #3ed624, #4fd540, #5dd454, #6ad366, #77d276, #80d282, #8ad28d, #93d198, #9cd2a3, #a6d2ad, #b0d3b7, #bad3c0);
-
+}
+#card-container{
+  display: flex;
+  
 }
 
 
