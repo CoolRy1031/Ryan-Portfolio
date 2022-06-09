@@ -82,7 +82,7 @@ aside {
   grid-area: aside;
   padding-top: 280px;
   text-align: center;
-  font-family: cursive;
+  font-family: fantasy;
   background-image: linear-gradient(to right top, #181517, #301b2f, #44224e, #512c73, #513a9d, #454baf, #325ac0, #006ad0, #0073bd, #0076a0, #007481, #3c6f6b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

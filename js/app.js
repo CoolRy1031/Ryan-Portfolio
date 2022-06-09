@@ -1,16 +1,35 @@
+import { projectData } from "./project-data.js"
+console.log(projectData)
+
 const footer = document.getElementById('footer')
 const paragraph = document.getElementById('paragraph')
 const lightDarkBtn = document.getElementById('light-dark-button')
-const title = document.getElementById('portfolio')
 const favicon = document.getElementById('favicon')
+const cardContainer = document.getElementById('card-container')
 
 
+
+let projectMarkup = projectData.map(project =>
+  ` 
+  <div class="card" style="width: 18rem;">
+    <img src="${project.image}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${project.title}</h5>
+      <p class="card-text">${project.description}</p>
+      <div>
+      <a href="#"${project.github}"btn btn-primary">GitHub</a>
+      <a href="#"${project.deployment}"btn btn-primary">Deployment</a>
+      </div>
+    </div>
+  </div>
+  `
+  
+  ).join('')
+  
+  cardContainer.innerHTML =projectMarkup
 
 
 const allido = new Audio('../audio/Dj clipped.mov')
-
-
-
 footer.addEventListener('click', function(){
   allido.volume = .1
   allido.play()
@@ -22,12 +41,9 @@ function changeFavicon () {
 }
   
 
-function revertFavicon () {
-  favicon.setAttribute('href', '/images/Ryan.jpeg')
-}
-
-
-
+// function revertFavicon () {
+//   favicon.setAttribute('href', '/images/Ryan.jpeg')
+// }
 
 lightDarkBtn.addEventListener('click', toggleLightDark)
 
