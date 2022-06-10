@@ -90,6 +90,8 @@ aside {
   font-weight: 800;
   --font-family: Arial;
   --font-size: 15px;
+  background-color: var(--paragraph-pg);
+  background-image: var(--paragraph-pg);
   font-family: var(--font-family);
   font-size: var(--font-size);
 }
