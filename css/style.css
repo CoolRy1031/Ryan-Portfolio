@@ -90,7 +90,7 @@ aside {
 
 #paragraph.dark {
   font-weight: 800;
-  --paragraph-pg:black;
+  --paragraph-pg:background-image: linear-gradient(to right top, #100566, #930064, #dd2347, #fb8419, #ebdb12);
   --font-family: Arial;
   --font-size: 15px;
   background-color: var(--paragraph-pg);
