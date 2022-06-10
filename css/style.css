@@ -86,8 +86,6 @@ aside {
 }
 
 #paragraph.dark {
-  font-weight: 500;
-  --paragraph-pg:#01020b;
   font-weight: 800;
   --paragraph-pg:white;
   --font-family: Arial;
