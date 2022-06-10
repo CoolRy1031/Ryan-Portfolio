@@ -79,7 +79,7 @@ aside {
 }
 
 #paragraph {
-  font-size: 16px;
+  font-size: 15px;
   grid-area: aside;
   padding-top: 50px;
   text-align: center;
@@ -92,7 +92,7 @@ aside {
 #paragraph.dark {
   --paragraph-pg:#01020b;
   --font-family: Arial;
-  --font-size: 12px;
+  --font-size: 15px;
   background-color: var(--paragraph-pg);
   background-image: var(--paragraph-pg);
   font-family: var(--font-family);
@@ -213,3 +213,30 @@ flex-container{
     -webkit-text-fill-color: transparent;
   }
 }
+
+@media only screen and (min-width: 768px){
+  #paragraph.dark {
+    --paragraph-pg:#01020b;
+    --font-family: Arial;
+    --font-size: 20px;
+    background-color: var(--paragraph-pg);
+    background-image: var(--paragraph-pg);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+  }
+
+}
+
+@media only screen and (min-width: 1024px){
+  #paragraph.dark {
+    --paragraph-pg:#01020b;
+    --font-family: Arial;
+    --font-size: 20px;
+    background-color: var(--paragraph-pg);
+    background-image: var(--paragraph-pg);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+  }
+
+}
+
