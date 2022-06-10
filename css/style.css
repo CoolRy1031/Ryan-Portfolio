@@ -70,7 +70,6 @@ aside {
   grid-area: aside;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: black;
   color: white;
 }
 
@@ -80,7 +79,7 @@ aside {
   padding-top: 50px;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-image: linear-gradient(to right top, #100566, #930064, #dd2347, #fb8419, #ebdb12);
+  color: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -89,11 +88,8 @@ aside {
   font-weight: 500;
   --paragraph-pg:#01020b;
   font-weight: 800;
-  --paragraph-pg:white;
   --font-family: Arial;
   --font-size: 15px;
-  background-color: var(--paragraph-pg);
-  background-image: var(--paragraph-pg);
   font-family: var(--font-family);
   font-size: var(--font-size);
 }
