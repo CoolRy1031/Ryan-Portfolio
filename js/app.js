@@ -14,7 +14,7 @@ let projectMarkup = projectData.map(project =>
 
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <li><a class="dropdown-item" href="${project.github}">GitHub</a></li>
-    <li><a class="dropdown-item" href="${project.deployment}">Deploy</a></li>
+    <li><a class="dropdown-item" href="${project.deployment}">Tic-Tac-Toe</a></li>
   </ul>
 </div>
   `
