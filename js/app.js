@@ -8,13 +8,12 @@ const cardContainer = document.getElementById('dropdown')
 
 let projectMarkup = projectData.map(project =>
   ` <div class="dropdown">
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-    Projects
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">${project.title}
   </a>
 
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <li><a class="dropdown-item" href="${project.github}">GitHub</a></li>
-    <li><a class="dropdown-item" href="${project.deployment}">Tic-Tac-Toe</a></li>
+    <li><a class="dropdown-item" href="${project.deployment}">App Deploy</a></li>
   </ul>
 </div>
   `
